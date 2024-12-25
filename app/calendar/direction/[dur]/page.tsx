@@ -50,8 +50,9 @@ const Calendar = ({ params }: CalendarProps) => {
         const hasSeen = getHasSeen()
 
         if (!hasSeen) {
-            setIsModal(hasDatePassed('26.12.2024'))
+            setIsModal(hasDatePassed('25.12.2024'))
         }
+
     }, [])
 
     useEffect(() => {
