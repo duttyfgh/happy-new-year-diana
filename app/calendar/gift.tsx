@@ -1,11 +1,13 @@
 'use client'
 
-import Image from "next/image"
-import { IGift } from "@/gifts"
 import { useEffect, useState } from "react"
-import hasDatePassed from "@/scripts/has-date-passed"
+import Image from "next/image"
 import { redirect } from "next/navigation"
+
 import { motion, Variants } from "framer-motion"
+
+import { IGift } from "@/gifts"
+import hasDatePassed from "@/scripts/has-date-passed"
 
 const appearing: Variants = {
     hidden: {
@@ -52,11 +54,13 @@ const Gift = ({ id, dateOfOpening, giftLockedImage, giftOpenedImage }: IGift) =>
                     </motion.div>
                 )
             }
+            
             <Image
                 src={isOpened ? giftOpenedImage : giftLockedImage}
                 width={350}
                 height={200}
-                alt='I love you girl <3' />
+                alt='I love you girl <3'
+                 />
         </div>
     )
 }

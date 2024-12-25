@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Snow />
-
+     
       <div
         className="bg-[#f12929] h-screen flex flex-col items-center justify-between py-12"
       >
